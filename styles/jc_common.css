@@ -1,0 +1,209 @@
+/* Common Styles */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Drop-down lists on hovering */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown>#create i {
+  color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  background: lightgreen;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  background: green;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+      HEADER
+*/
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: black;
+}
+
+.header-wrapper #header-image {
+  height: 15%;
+  width: 15%;
+  image-rendering: auto;
+}
+
+.header-wrapper>.explore {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+  background: black;
+}
+
+.header-wrapper>.explore p {
+  color: yellow;
+
+}
+
+.header-wrapper>.explore>.items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background: black;
+}
+
+.header-wrapper>.explore>.items button {
+  border: 0;
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+
+
+/*
+      MAIN
+*/
+
+.main-container-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to left bottom,
+      rgb(11, 11, 15) 0%,
+      rgb(66, 66, 76) 100%);
+  background-blend-mode: difference, normal;
+}
+
+.main-container-wrapper>.colum-left {
+  margin: 2em;
+  color: grey;
+  width: 50%;
+}
+
+.main-container-wrapper>.colum-left>#p1 {
+  font-size: 2em;
+  letter-spacing: 1.2;
+}
+
+.main-container-wrapper>.colum-left>#p1 b {
+  letter-spacing: 1.5;
+  color: white;
+}
+
+.main-container-wrapper>.colum-left>#p1 i {
+  color: yellow;
+}
+
+.main-container-wrapper>.colum-left>#p2 {
+  font-size: 1.5em;
+  letter-spacing: 1;
+  margin-bottom: 3em;
+}
+
+.main-container-wrapper>.colum-left>#p3>#SignUpforFree {
+  font-size: 1.5em;
+  color: black;
+  background: #64ff64;
+  margin-right: .5em;
+  padding: .75em;
+}
+
+.main-container-wrapper>.colum-left>#p3>#SignUpforFree:hover {
+  color: white;
+  background: darkgreen;
+  font-weight: bold;
+}
+
+.main-container-wrapper>.colum-left>#p3>#LearnMore {
+  font-size: 1.5em;
+  color: white;
+  background: black;
+  padding: .75em;
+}
+
+.main-container-wrapper>.colum-left>#p3>#LearnMore:hover {
+  color: black;
+  background: darkgrey;
+  font-weight: bolder;
+}
+
+.main-container-wrapper>.colum-right {
+  width: 50%;
+}
+
+.main-container-wrapper>.colum-right p {
+  font-size: 1.2em;
+}
+
+.main-container-wrapper>.colum-right span {
+  color: aqua;
+}
+
+.main-container-wrapper>.colum-right #lmr7a8E {
+  width: 100%;
+  float: right;
+
+}
+
+/*
+      FOOTER
+*/
+
+.footer table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.footer td {
+  height: 50px;
+  text-align: center;
+  color: lightgrey;
+  background: rgb(33, 33, 33);
+  border: 1px solid grey;
+}
+
+.footer td b {
+  font-size: 1.2rem;
+  color: white;
+}
